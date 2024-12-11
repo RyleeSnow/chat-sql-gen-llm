@@ -72,10 +72,16 @@ Codes for you to build a local LLM api and use Streamlit to call the api: more f
         uvicorn s1_build_local_api:app --host 0.0.0.0 --port 8000 > uvicorn.log 2>&1 &
         ```
         - Note: the port you use here shall be aligned with the `api_address` in `config.json`.
-- **Step 2: Use your browser and start to chat**
+- **Step 3: Use your browser and start to chat**
     - (1) Start the Streamlit service:
         ```bash
         streamlit run s2_chatbot_call_api.py --server.address 127.0.0.1 --server.port 6006
         ```
     - (2) Open your brower: http://127.0.0.1:6006
         - Note: if you are using a server and want to open the browser locally, make sure you have the port forwarded. And of course, you can use other port instead of 6006.
+- **Step 4: Stop the API service**
+    - Stop the API:
+        ```bash
+        lsof -ti:8000 | xargs kill
+        ```
+        - Note: the port here is the same in the Step 2.
