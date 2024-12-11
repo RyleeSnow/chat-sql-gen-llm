@@ -1,9 +1,7 @@
 # ChatSQLGenLLM
 A chatbot to generate SQL code / Get the queried data based on LLM model
 
-<p align="center">
-  <img src="./interface.PNG" style="border: 2px solid black;">
-</p>
+![snapshot]["./interface.png]
 
 &nbsp;
 
@@ -47,4 +45,3 @@ Codes for you to direcly use Streamlit module to build a chatbot. Quick and Easy
     - Open your brower: http://127.0.0.1:6006
         - Note: if you are using a server and want to open the browser locally, make sure you have the port forwarded. And of course, you can use other port instead of 6006.
 
-&nbsp;
