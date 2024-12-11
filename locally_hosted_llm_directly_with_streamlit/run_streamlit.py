@@ -14,7 +14,7 @@ with open('config.json', 'r') as config_file:
 
 
 def random_greetings():
-    '''Generate a random greeting message'''
+    """Generate a random greeting message"""
 
     response = random.choice([
         'Hello there! This is Catbot. How can I assist you today?',
@@ -27,7 +27,7 @@ def random_greetings():
 
 
 def generate_prompt(question, examples, prompt_file, metadata_file):
-    '''
+    """
     Generate a prompt for the LLM model.
     Args:
         question (str): The question to generate a prompt for.
@@ -36,7 +36,7 @@ def generate_prompt(question, examples, prompt_file, metadata_file):
         metadata_file (str): The path to the metadata file. Metadata file is a SQL file that contains the table metadata (table name, column names, and column types).
     Returns:
         str: The generated prompt.
-    '''
+    """
 
     # Read the prompt template.
     # NOTE! This template is based on SQLCoder model, if you want to use other model, you may need to change the template.
@@ -195,4 +195,4 @@ if user_input := st.chat_input():
 
     # Add the user's input and the model's output to the messages list in the session_state
     st.session_state.messages.append({'role': 'user', 'content': user_input})
-    st.session_state.messages.append({'role': 'assistant', 'content': outputs})
+    st.session_state.messages.append({'role': 'assistant', 'content': sqlcode})
