@@ -1,0 +1,1 @@
+2024-12-10 09:05:37, Example 1: [QUESTION]how many brands in catcode WHISK[/QUESTION][SQL]SELECT COUNT(DISTINCT b.BRAND) FROM brand b JOIN catcode c ON b.PROD_ID = c.PROD_ID WHERE c.CATCODE = 'WHISK'

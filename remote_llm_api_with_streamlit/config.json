@@ -1,0 +1,6 @@
+{
+    "prompt_file": "prompt.md",
+    "metadata_file": "metadata.sql",
+    "answer_mode": "dataframe",
+    "local_db_path": "/home/hury1001/multi_channel_bert_full_module/llm/test.db"
+}
