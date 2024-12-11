@@ -1,0 +1,11 @@
+CREATE TABLE price (
+    PROD_ID INTEGER PRIMARY KEY,
+    SELLING_PRICE FLOAT,
+);
+
+CREATE TABLE brand (
+    PROD_ID INTEGER PRIMARY KEY,
+    BRAND VARCHAR(50),
+);
+
+-- price.PROD_ID can be joined with brand.PROD_ID
