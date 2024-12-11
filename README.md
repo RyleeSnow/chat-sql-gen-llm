@@ -1,21 +1,29 @@
 # ChatSQLGenLLM
 A chatbot to generate SQL code / Get the queried data based on LLM model
 
-<img src="./interface.PNG" style="border: 2px solid black;">
+<p align="center">
+  <img src="./interface.PNG" style="border: 2px solid black;">
+</p>
+
+&nbsp;
 
 ## Model Used:
 **SQLCoder** Model from Huggingface. Details and Dowload: https://huggingface.co/defog/sqlcoder-7b-2
 
+&nbsp;
 
 ## Interface Builder:
 **Streamlit**. Details: https://streamlit.io/
 
+&nbsp;
 
 ## Basic Information of System:
 - Python 3.9
 - Unbantu 20.4
 - Cuda Version 11.4
 - Basic Python Package: `streamlit`, `transformers`, `torch`, `sqlite3`, `pandas`
+
+&nbsp;
 
 ## Contents of this repository
 
@@ -38,3 +46,5 @@ Codes for you to direcly use Streamlit module to build a chatbot. Quick and Easy
         ```
     - Open your brower: http://127.0.0.1:6006
         - Note: if you are using a server and want to open the browser locally, make sure you have the port forwarded. And of course, you can use other port instead of 6006.
+
+&nbsp;
