@@ -1,8 +1,7 @@
 # ChatSQLGenLLM
 A chatbot to generate SQL code / Get the queried data based on LLM model
 
-![snapshot](./interface.PNG)
-
+<img src="./interface.PNG" style="border: 2px solid black;">
 
 ## Model Used:
 **SQLCoder** Model from Huggingface. Details and Dowload: https://huggingface.co/defog/sqlcoder-7b-2
