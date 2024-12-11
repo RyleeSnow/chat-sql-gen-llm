@@ -1,7 +1,7 @@
 # ChatSQLGenLLM
 A chatbot to generate SQL code / Get the queried data based on LLM model
 
-![snapshot]["./interface.png]
+![Local Image](./interface.png)
 
 &nbsp;
 
