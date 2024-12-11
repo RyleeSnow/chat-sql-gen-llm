@@ -24,8 +24,9 @@ A chatbot to generate SQL code / Get the queried data based on LLM model
 &nbsp;
 
 ## Contents of this repository
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/RyleeSnow/ChatSQLGenLLM" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" aria-label="Star RyleeSnow/ChatSQLGenLLM on GitHub">Star</a> Please kindly support if you think this repo is helpful! Thx!
+<a class="github-button" href="https://github.com/RyleeSnow/ChatSQLGenLLM" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" aria-label="Star RyleeSnow/ChatSQLGenLLM on GitHub">Star</a>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+Please kindly support if you think this repo is helpful! Thx!
 
 ### 1. locally_hosted_llm_directly_with_streamlit
 Codes for you to direcly use Streamlit module to build a chatbot. Quick and Easy!
