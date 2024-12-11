@@ -6,7 +6,9 @@ A chatbot to generate SQL code / Get the queried data based on LLM model
 &nbsp;
 
 ## Model Used:
-**SQLCoder** Model from Huggingface. Details and Dowload: https://huggingface.co/defog/sqlcoder-7b-2
+**SQLCoder** Model from Huggingface. Details: https://huggingface.co/defog/sqlcoder-7b-2
+
+If you want to use this model, you could download all files on this page https://huggingface.co/defog/sqlcoder-7b-2/tree/main to your local folder, and set it as the `model_path` when running the code.
 
 &nbsp;
 
@@ -19,6 +21,7 @@ A chatbot to generate SQL code / Get the queried data based on LLM model
 - Python 3.9
 - Unbantu 20.4
 - Cuda Version 11.4
+- GPU RAM: 16G * 2GPU
 - Basic Python Package: `streamlit`, `transformers`, `torch`, `fastapi`, `sqlite3`, `pandas`
 
 &nbsp;
