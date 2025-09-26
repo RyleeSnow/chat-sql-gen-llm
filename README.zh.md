@@ -1,4 +1,4 @@
-# ChatSQLGenLLM - 智能SQL查询生成系统
+# ChatSQLGenLLM
 
 > **语言**: [English](README.md) | [中文](README.zh.md)
 
