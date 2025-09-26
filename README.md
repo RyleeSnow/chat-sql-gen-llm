@@ -1,10 +1,11 @@
 # ChatSQLGenLLM - Intelligent SQL Query Generation System
 
+> **Language**: [English](README.md) | [中文](README.zh.md)
+
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/streamlit-latest-red.svg)
 ![FastAPI](https://img.shields.io/badge/fastapi-latest-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![GitHub Repo stars](https://img.shields.io/github/stars/RyleeSnow/ChatSQLGenLLM)
 
 An AI-powered SQL query generation chatbot that converts natural language questions into SQL queries and executes them to retrieve data from databases. Built with advanced Large Language Models (LLM) and modern web technologies.
 
@@ -19,7 +20,6 @@ An AI-powered SQL query generation chatbot that converts natural language questi
 - 🖥️ **User-friendly Interface**: Interactive web interface built with Streamlit
 - 🚀 **Flexible Architecture**: Multiple deployment options (direct integration or API-based)
 - 📊 **Database Integration**: Support for SQLite and other SQL databases
-- ⚡ **High Performance**: Optimized for GPU acceleration with CUDA support
 - 🔧 **Customizable**: Configurable prompts, metadata, and model settings
 
 <br>
@@ -32,17 +32,17 @@ The system provides three different deployment architectures:
 ChatSQLGenLLM/
 ├── locally_hosted_llm_directly_with_streamlit/     # Direct Integration
 │   ├── config.json                                 # Configuration settings
-│   ├── run_streamlit.py                           # Main application
-│   ├── prompt.md                                  # Prompt template
-│   ├── metadata.sql                               # Database schema
-│   └── fewshots_examples.txt                      # Example queries
-├── locally_hosted_llm_fastapi_with_streamlit/     # API-based Architecture
-│   ├── s1_build_local_api.py                      # FastAPI server
-│   ├── s2_chatbot_call_api.py                     # Streamlit client
+│   ├── run_streamlit.py                            # Main application
+│   ├── prompt.md                                   # Prompt template
+│   ├── metadata.sql                                # Database schema
+│   └── fewshots_examples.txt                       # Example queries
+├── locally_hosted_llm_fastapi_with_streamlit/      # API-based Architecture
+│   ├── s1_build_local_api.py                       # FastAPI server
+│   ├── s2_chatbot_call_api.py                      # Streamlit client
 │   └── [configuration files]
-└── remote_llm_api_with_streamlit/                 # Remote API Integration
-    ├── s1_call_remote_llm_api.php                 # PHP API client
-    ├── s2_chatbot_call_api.py                     # Streamlit interface
+└── remote_llm_api_with_streamlit/                  # Remote API Integration
+    ├── s1_call_remote_llm_api.php                  # PHP API client
+    ├── s2_chatbot_call_api.py                      # Streamlit interface
     └── [configuration files]
 ```
 
@@ -52,9 +52,8 @@ ChatSQLGenLLM/
 
 ### System Requirements
 
-- **Operating System**: Ubuntu 20.04 (tested) / Windows / macOS
+- **Operating System**: Ubuntu 20.04 (tested) / macOS
 - **Python**: 3.9+
-- **CUDA**: 11.4+ (for GPU acceleration)
 - **Hardware**: 
   - GPU RAM: 16GB × 2GPU (as tested in original setup)
   - CPU RAM: 8GB+
@@ -150,7 +149,6 @@ Ideal for production environments where you need flexibility and don't want to r
 - ⚡ **Performance**: Model stays loaded in memory between requests
 - 🔄 **Flexibility**: Restart web interface without reloading model
 - 🔧 **Integration**: Easy to integrate with other applications
-- 📈 **Scalability**: Better resource management
 
 #### Setup Process
 
@@ -317,30 +315,6 @@ SQL: SELECT product_name, SUM(quantity) as total_sold FROM orders GROUP BY produ
 ```
 
 <br>
-
-## 🎯 Best Practices
-
-### Performance Optimization
-
-1. **GPU Configuration**: Ensure CUDA is properly configured for optimal performance
-2. **Model Caching**: Use API-based architecture for frequent queries
-3. **Database Indexing**: Optimize your database with appropriate indexes
-4. **Batch Processing**: Group similar queries when possible
-
-### Security Considerations
-
-1. **Input Validation**: Always validate user inputs
-2. **Database Permissions**: Use read-only database users when possible
-3. **Network Security**: Configure proper firewall rules for API deployment
-4. **Data Privacy**: Ensure sensitive data is handled appropriately
-
-### Maintenance
-
-1. **Regular Updates**: Keep dependencies and models updated
-2. **Monitoring**: Monitor API performance and error rates
-3. **Backup**: Regular backup of configuration and custom prompts
-4. **Testing**: Validate model outputs with known queries
-
 
 ## 📝 License
 
